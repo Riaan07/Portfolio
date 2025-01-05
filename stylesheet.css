@@ -293,10 +293,11 @@ span {
         order: 2;
         /* Ensures image goes below the content */
         margin-top: 20px;
+        width: 50vw;
+        height: 50vw;
     }
 }
 
-/* Media query for screens up to 375px */
 @media (max-width: 345px) {
     .home {
         padding: 10px;
@@ -308,10 +309,12 @@ span {
 
     .home-content {
         font-size: 14px;
-        /* Adjust font size for smaller screens */
+
     }
 
     .home-img img {
         max-width: 250px;
+        width: 55vw;
+        height: 50vw;
     }
 }

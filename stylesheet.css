@@ -87,8 +87,9 @@ section {
 }
 
 .home-img img {
-    width: 60vw;
-    height: 60vw;
+    align-content: flex-end;
+    width: 50vw;
+    height: 50vw;
 }
 
 .home-content h3 {

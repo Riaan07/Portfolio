@@ -87,8 +87,8 @@ section {
 }
 
 .home-img img {
-    width: 40vw;
-    height: 40vw;
+    width: 60vw;
+    height: 60vw;
 }
 
 .home-content h3 {
@@ -156,7 +156,7 @@ span {
 
 .about {
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
     gap: 2rem;
     background: var(--bg-color);

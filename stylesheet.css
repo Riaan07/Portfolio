@@ -293,7 +293,7 @@ span {
     .home-img {
         order: 2;
         /* Ensures image goes below the content */
-        margin-top: 20px;
+        margin-top: 15px;
         width: 50vw;
         height: 50vw;
     }

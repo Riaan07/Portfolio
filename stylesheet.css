@@ -112,7 +112,7 @@ span {
 }
 
 .home-content p {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .social-media a {
@@ -186,6 +186,40 @@ span {
     font-size: 2.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: solid;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin: 0 auto;
+    background: var(--bg-color);
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-color);
+
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.skills-list i {
+    color: #007bff;
+    font-size: 22px;
+    margin-right: 10px;
 }
 
 .services-container {
@@ -315,7 +349,7 @@ span {
 
     .home-img img {
         max-width: 250px;
-        width: 55vw;
+        width: 50vw;
         height: 50vw;
     }
 }

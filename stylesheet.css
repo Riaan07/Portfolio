@@ -16,7 +16,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef3f0;
+    --main-color: #22d9d3;
 }
 
 html {
@@ -90,6 +90,7 @@ section {
     align-content: flex-end;
     width: 45vw;
     height: 45vw;
+    border-radius: 2rem;
 }
 
 .home-content h3 {
@@ -351,5 +352,46 @@ h2 {
         max-width: 250px;
         width: 50vw;
         height: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        padding: 5% 5%;
+    }
+
+    .home-img img {
+        width: 80vw;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .home-content {
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.8rem;
+    }
+
+    .social-media a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 2.5rem;
+        margin: 2rem 1rem;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
     }
 }

@@ -1,192 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> My Portfolio</title>
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/v4-font-face.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080d19">
+    <meta name="description" content="Sbahle Riaan Dlamini — C# and .NET developer, Computer Science Honours student, and builder of web, API, database and mobile applications.">
+    <title>Sbahle Riaan Dlamini | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <header class="header">
-
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active"> <i class="bx bxs-home icon"></i>Home</a>
-            <a href="#about"> <i class="bx bxs-contact icon"></i>About </a>
-            <a href="#services"><i class="bx bxl-github icon"></i>Skills</a>
-        </nav>
-
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+        <div class="container nav-shell">
+            <a class="brand" href="#home" aria-label="Sbahle Dlamini home"><span class="brand-icon">&lt;/&gt;</span><span>Riaan<span class="brand-dot">.</span>dev</span></a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false"><i data-lucide="menu" aria-hidden="true"></i></button>
+            <nav class="nav" id="primary-nav" aria-label="Main navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-contact">Let's talk <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+            </nav>
+        </div>
     </header>
-
-    <section class="home" id="home">
-
-        <div class="home-content">
-
-            <h1> It's Sbahle Dlamini</h1>
-            <h3> I am a <span> Software Developer</span></h3>
-            <p>
-                I am a recent graduate with a strong foundation in web and mobile development. Proficient in ASP.NET MVC
-                C#, Java, and
-                frameworks like React and Bootstrap, I specialize in building secure, responsive, and user-friendly
-                applications.
-
-                With skills in both front-end and back-end development, I am eager to apply my knowledge to create
-                impactful web and
-                mobile solutions. I am driven by a passion for learning and innovation, ready to bring ideas to life
-                through technology.
-            </p>
-            <div class="social-media">
-                <a class="www.linkedin.com/in/Sbahle"><i class='bx bxl-linkedin'></i></a>
-                <!--<a class="#"><i class='bx bxl-facebook'></i></a>-->
-                <a class="https://riaan07.github.io/Portfolio/"><i class='bx bxl-github'></i></a>
+    <main id="main">
+        <section class="hero container section" id="home">
+            <div class="hero-copy">
+                <div class="eyebrow"><span class="status-pulse"></span> Open to junior / graduate developer opportunities</div>
+                <p class="hero-kicker">HELLO, I'M SBAHLE RIAAN DLAMINI</p>
+                <h1>Building practical software<span class="gradient-text"> with purpose.</span></h1>
+                <p class="hero-subtitle">C# / .NET Developer <span class="separator">/</span> Computer Science Honours Student</p>
+                <p class="hero-description">I create web applications, connect APIs and databases, and turn complex problems into thoughtful software. I love collaborating with developers, sharing knowledge and learning through building.</p>
+                <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore my work <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a class="btn btn-secondary" href="#contact">Get in touch <i data-lucide="mail" aria-hidden="true"></i></a></div>
+                <div class="social-links"><a href="https://github.com/Riaan07" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a><a href="https://www.linkedin.com/Sbahle" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a><a href="mailto:sbahleriaandlamini@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a><span>Based in South Africa</span></div>
             </div>
-            <!-- <a class="btn" href="pdf/Dlamini_Sbahle_R_Resume.pdf" download="Dlamini_Sbahle_R_Resume.pdf"><i
-                    class='bx bxs-download'></i> Resume</a>-->
-
-        </div>
-
-        <div class="home-img">
-            <img src="images/RIaan.jpg" alt="">
-        </div>
-
-    </section>
-
-    <section class="about" id="about">
-
-        <div class="about-content">
-            <h1 class="heading">About <span>Me!!</span></h1>
-            <p> Hello! Iam Sbahle Riaan Dlamini, with massive passion in <span class="paragraph">Software
-                    Engineering</span> with a
-                knack for
-                building intuitive
-                and
-                efficient web and
-                mobile applications. Recently graduated with a degree in <span class="paragraph">Bachelor of Science of
-                    Computer
-                    Science and Information Technology</span> from
-                <span class="paragraph">University of the free state</span>, I have developed a strong foundation in
-                both front-end and
-                back-end
-                development.
-                I enjoy creating user-friendly interfaces, architecting scalable systems, and solving complex
-                problems with clean,
-                efficient code. My projects demonstrate my ability to deliver real-world solutions, from dynamic
-                websites to mobile
-                applications and everything in between.
-
-                <br />
-                <br />
-                Teamwork & Adaptability: Adapt at working in agile teams and collaborating with diverse stakeholders
-                to deliver on
-                project goals.
-                When I’m not coding, I enjoy partaking in open-source, exploring tech blogs. I’m
-                constantly exploring
-                new technologies to stay ahead in this ever-evolving field.
-                Feel free to explore my projects and reach out if you'd like to collaborate or discuss
-                opportunities.
-
-                <br />
-                <br />
-
-            <ul class="skills-list">
-                <h1 class="">Here’s what I bring to the table:</h1>
-                <li><i class="fa fa-server"></i> SQL (Data Management, Manipulation, and Querying)</li>
-                <li><i class="fas fa-chart-pie"></i> Data Analysis with Pandas and NumPy</li>
-                <li><i class="fas fa-chart-pie"></i> Data Visualization</li>
-                <li><i class="fas fa-code"></i> C# Programming (Data Structures and Algorithms)</li>
-                <li><i class="fas fa-code-branch"></i> Problem-Solving with DSA</li>
-                <li><i class="fas fa-desktop"></i> Front-End Expertise: Proficient in HTML, CSS, JavaScript, and
-                    frameworks like
-                    React</li>
-                <li><i class="fas fa-server"></i> Back-End Skills: Hands-on projects with ASP.NET, and databases
-                    like SQL</li>
-                <li><i class="fas fa-tools"></i> Tools & Technologies: Skilled in Git, RESTful APIs</li>
-            </ul>
-            <br />
-
-
-            </p>
-
-        </div>
-
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <h2 class="heading"> Software <span>Skills</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>Web Development</h3>
-                <p>
-                    Dive into professional-grade web development with our expertise in ASP.NET MVC using C#. Below is a
-                    banking
-                    web application I have developed, showcasing seamless online transaction capabilities. The
-                    application is
-                    tailored for the University of the Free State, integrating role-based registration, account
-                    management,
-                    and secure backend systems. It highlights my ability to create intuitive, scalable, and secure web
-                    solutions.
-                </p>
-                <a href="https://github.com/Riaan07/AuroBank_SoftwareProject.git" class="btn"> Asp.Net MVC C# GitHub
-                    link..</a>
+            <div class="hero-visual" aria-label="Illustration of software development technologies">
+                <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+                <div class="editor-card">
+                    <div class="editor-top"><div class="traffic"><b></b><b></b><b></b></div><span>developer.cs</span><i data-lucide="code-2" aria-hidden="true"></i></div>
+                    <div class="editor-code"><div><span class="line-no">01</span><span class="code-purple">public class</span> <span class="code-blue">Developer</span></div><div><span class="line-no">02</span>{</div><div><span class="line-no">03</span>  <span class="code-purple">string</span> focus = <span class="code-green">"C# / .NET"</span>;</div><div><span class="line-no">04</span>  <span class="code-purple">bool</span> keepsLearning = <span class="code-orange">true</span>;</div><div><span class="line-no">05</span>  <span class="code-purple">string</span> mindset = <span class="code-green">"Build. Share. Grow."</span>;</div><div><span class="line-no">06</span>}</div></div>
+                    <div class="editor-bottom"><span><span class="online-dot"></span> Ready to build</span><span>C# &nbsp;·&nbsp; ASP.NET &nbsp;·&nbsp; SQL</span></div>
+                </div>
+                <div class="floating-chip chip-left"><i data-lucide="database"></i> SQL Server</div>
+                <div class="floating-chip chip-right"><i data-lucide="braces"></i> REST APIs</div>
+                <div class="floating-chip chip-bottom"><i data-lucide="users"></i> Team collaboration</div>
             </div>
+        </section>
 
-            <!-- <div class="services-box">
-                <i class='bx bx-chart'></i>
-                <h3>Data Analytycs</h3>
-                <p>
-                    Leverage the potential of data with my intermediate skills in data analytics. Proficient in tools
-                    and
-                    languages like Python, SQL, and Excel, I provide actionable insights, predictive modeling, and
-                    robust
-                    data visualization. These skills enable me to turn raw data into valuable strategies for growth and
-                    decision-making.
-                </p>
+        <section class="section about-section" id="about"><div class="container about-grid"><div><p class="section-kicker">01 / ABOUT ME</p><h2 class="section-title">Curious mind.<br><span class="muted-heading">Builder's mindset.</span></h2></div><div class="about-text"><p>I'm a <strong>BSc Computer Science and IT graduate</strong> from the University of the Free State, currently pursuing <strong>Honours studies in Computer Science / IT</strong>.</p><p>My projects span full-stack web development, C# and ASP.NET MVC, SQL Server, REST API integration and Java-based Android development. I enjoy understanding how systems fit together, from a clean interface to a reliable backend.</p><p>I actively engage with fellow developers to exchange ideas, work through technical challenges and sharpen my skills. I'm excited to keep growing through real-world projects and collaborative software engineering.</p><div class="quick-facts"><div><i data-lucide="graduation-cap"></i><span>BSc Computer Science & IT<br><small>University of the Free State · 2024</small></span></div><div><i data-lucide="book-open"></i><span>Honours studies<br><small>In progress · 2026</small></span></div></div></div></div></section>
 
+        <section class="section" id="skills">
+            <div class="container">
+                <p class="section-kicker">02 / TECHNICAL TOOLKIT</p><div class="section-heading-row"><h2 class="section-title">Technologies I <span class="gradient-text">work with.</span></h2><p>Tools and concepts I've used or explored through projects, coursework and continued learning.</p></div><div class="skills-grid">
+                    <article class="skill-card"><div class="skill-icon"><i data-lucide="code-2"></i></div><h3>Languages</h3><div class="tags"><span>C#</span><span>Java</span><span>JavaScript</span><span>TypeScript</span><span>Python</span><span>SQL</span><span>HTML5</span><span>CSS3</span></div></article>
+                    <article class="skill-card"><div class="skill-icon"><i data-lucide="layers-3"></i></div><h3>Web & Backend</h3><div class="tags"><span>ASP.NET MVC</span><span>ASP.NET</span><span>RESTful APIs</span><span>Bootstrap</span><span>Angular</span><span>MVC Architecture</span></div></article>
+                    <article class="skill-card"><div class="skill-icon"><i data-lucide="database"></i></div><h3>Data & Databases</h3><div class="tags"><span>Microsoft SQL Server</span><span>Relational Design</span><span>CRUD</span><span>Data Modelling</span><span>SQL Queries</span></div></article>
+                    <article class="skill-card"><div class="skill-icon"><i data-lucide="wrench"></i></div><h3>Tools & Platforms</h3><div class="tags"><span>Git</span><span>GitHub</span><span>Docker</span><span>Android (Java)</span><span>Microsoft Azure</span><span>AWS Fundamentals</span></div></article>
+                    <article class="skill-card"><div class="skill-icon"><i data-lucide="workflow"></i></div><h3>Engineering Practices</h3><div class="tags"><span>OOP</span><span>Testing</span><span>Debugging</span><span>UML</span><span>System Design</span><span>Requirements Analysis</span><span>Iterative Development</span></div></article>
+                    <article class="skill-card"><div class="skill-icon"><i data-lucide="brain-circuit"></i></div><h3>Core Strengths</h3><div class="tags"><span>Algorithms</span><span>Data Structures</span><span>Problem Solving</span><span>API Integration</span><span>Collaboration</span><span>Knowledge Sharing</span></div></article>
+                </div><p class="skills-note"><i data-lucide="info"></i> Skill levels vary by technology; this list includes practical project experience as well as foundational exposure.</p>
             </div>
-            -->
+        </section>
 
-            <div class="services-box">
-                <i class='bx bx-mobile'></i>
-                <h3>Mobile Development</h3>
-                <p>
-                    Experience the convenience of custom mobile solutions with my expertise in Java-based mobile
-                    development.
-                    Below is a mobile application I developed to facilitate facility bookings at the University of the
-                    Free
-                    State. Designed with user-friendliness and efficiency in mind, the app delivers a streamlined
-                    experience
-                    for managing bookings and reservations.
-                </p>
-                <a href="https://github.com/Riaan07/Flex_IT.git" class="btn"> Java GitHub link..</a>
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <p class="section-kicker">03 / SELECTED WORK</p><div class="section-heading-row"><h2 class="section-title">Projects that <span class="gradient-text">tell my story.</span></h2><p>A mix of web, API, database and mobile application work.</p></div><div class="projects-grid">
+                    <article class="project-card featured career-feature" aria-labelledby="career-title">
+                        <div class="career-feature-visual">
+                            <div class="career-preview" role="img" aria-label="Illustrative interface concept for a CV and job matching dashboard; not a screenshot of the actual application">
+                                <div class="preview-top"><span class="preview-mark"><i data-lucide="scan-search" aria-hidden="true"></i> CareerSync AI</span><span class="preview-demo">ILLUSTRATIVE PREVIEW</span></div>
+                                <div class="preview-main">
+                                    <div class="preview-metric"><span>CV ↔ Job alignment</span><strong>Match analysis</strong><small>Compare skills, qualifications &amp; experience</small></div>
+                                    <div class="preview-bars" aria-hidden="true"><div><span>Skills</span><b style="--bar:83%"></b></div><div><span>Experience</span><b style="--bar:62%"></b></div><div><span>Qualifications</span><b style="--bar:77%"></b></div></div>
+                                    <div class="preview-insights"><span><i data-lucide="check-circle-2" aria-hidden="true"></i> Strengths identified</span><span><i data-lucide="lightbulb" aria-hidden="true"></i> Development insights</span></div>
+                                </div>
+                            </div>
+                            <p class="preview-disclaimer">Conceptual dashboard illustration · not an application screenshot or real match result</p>
+                        </div>
+                        <div class="project-content"><div class="project-label">FEATURED · HONOURS PROJECT</div><h3 id="career-title">CareerSync AI</h3><p>A data-driven CV and job description matching platform that compares skills, qualifications and experience, identifies gaps, and presents improvement recommendations in an interactive dashboard.</p><div class="tags"><span>C#</span><span>ASP.NET MVC</span><span>Microsoft SQL Server</span><span>JavaScript</span><span>RESTful APIs</span><span>Bootstrap</span></div><a class="project-link" href="#career-case-study">Explore the case study <i data-lucide="arrow-down-right" aria-hidden="true"></i></a><span class="project-note"><i data-lucide="github" aria-hidden="true"></i> Source repository link available once confirmed</span></div>
+                    </article>
+                    <article class="project-card"><div class="project-art art-bank"><i data-lucide="landmark"></i><span>02 / FULL-STACK + MOBILE</span></div><div class="project-content"><h3>AuroBank</h3><p>A banking application with web-based functionality, backend services, a SQL Server database and Android integration, developed using C# and Java.</p><div class="tags"><span>ASP.NET</span><span>C#</span><span>Java</span><span>SQL Server</span><span>APIs</span></div><a class="project-link" href="https://github.com/Riaan07/AuroBank_SoftwareProject" target="_blank" rel="noopener noreferrer">View on GitHub <i data-lucide="arrow-up-right"></i></a></div></article>
+                    <article class="project-card"><div class="project-art art-mobile"><i data-lucide="smartphone"></i><span>03 / ANDROID</span></div><div class="project-content"><h3>Flex IT</h3><p>A Java-based mobile application focused on simplifying facility bookings and reservations at the University of the Free State.</p><div class="tags"><span>Java</span><span>Android</span><span>Mobile UI</span></div><a class="project-link" href="https://github.com/Riaan07/Flex_IT" target="_blank" rel="noopener noreferrer">View on GitHub <i data-lucide="arrow-up-right"></i></a></div></article>
+                </div>
+                <section class="career-case-study" id="career-case-study" aria-labelledby="case-heading">
+                    <div class="case-intro"><div><p class="section-kicker">PROJECT DEEP DIVE / CAREERSYNC AI</p><h3 id="case-heading">From job requirements to <span class="gradient-text">actionable insights.</span></h3></div><p>CareerSync AI explores how a CV can be compared with a job description to help users identify areas of alignment and opportunities to improve.</p></div>
+                    <div class="case-value-grid">
+                        <div class="case-value"><i data-lucide="file-search" aria-hidden="true"></i><h4>Compare profiles</h4><p>Evaluate skills, qualifications and experience against the requirements of a role.</p></div>
+                        <div class="case-value"><i data-lucide="chart-no-axes-column-increasing" aria-hidden="true"></i><h4>Surface match scores</h4><p>Calculate an alignment score and highlight missing or weaker competencies.</p></div>
+                        <div class="case-value"><i data-lucide="layout-dashboard" aria-hidden="true"></i><h4>Guide improvement</h4><p>Present matching results and personalised recommendations in an interactive dashboard.</p></div>
+                    </div>
+                    <div class="case-subheading"><div><p class="section-kicker">SYSTEM OVERVIEW</p><h4>How the pieces fit together</h4></div><p>A high-level conceptual architecture based on the documented project components, not a source-code-level diagram.</p></div>
+                    <div class="architecture" aria-label="Conceptual flow: browser interface to ASP.NET MVC application, matching logic, and SQL Server data storage, with REST API integration">
+                        <div class="arch-node"><i data-lucide="monitor-smartphone" aria-hidden="true"></i><strong>Web interface</strong><small>HTML · CSS · JavaScript · Bootstrap</small></div><i class="arch-arrow" data-lucide="arrow-right" aria-hidden="true"></i>
+                        <div class="arch-node"><i data-lucide="server" aria-hidden="true"></i><strong>ASP.NET MVC</strong><small>C# · application logic · matching</small></div><i class="arch-arrow" data-lucide="arrow-right" aria-hidden="true"></i>
+                        <div class="arch-node"><i data-lucide="database" aria-hidden="true"></i><strong>Data layer</strong><small>Microsoft SQL Server</small></div>
+                    </div>
+                    <p class="arch-note"><i data-lucide="git-branch" aria-hidden="true"></i> RESTful API integration is also part of the project. Exact endpoints and deployment topology are not specified here.</p>
+                    <div class="case-subheading screenshots-heading"><div><p class="section-kicker">APPLICATION GALLERY</p><h4>Actual screenshots coming next</h4></div><p>These slots are intentionally placeholders. Add screenshots from the real CareerSync AI application when available.</p></div>
+                    <div class="case-shots">
+                        <div class="shot-placeholder"><i data-lucide="image-plus" aria-hidden="true"></i><strong>Match results dashboard</strong><span>Replace with an actual screenshot of your application</span></div>
+                        <div class="shot-placeholder"><i data-lucide="image-plus" aria-hidden="true"></i><strong>Skills-gap recommendations</strong><span>Replace with an actual screenshot of your application</span></div>
+                    </div>
+                    <div class="case-bottom"><p><strong>My contribution:</strong> Designed and developed CV/job matching functionality, scoring and gap identification, dashboard presentation, and SQL Server database operations as described in my project CV.</p><a class="btn btn-secondary" href="mailto:sbahleriaandlamini@gmail.com?subject=CareerSync%20AI%20project">Ask me about this project <i data-lucide="mail" aria-hidden="true"></i></a></div>
+                </section>
+                <div class="more-projects"><a href="https://github.com/Riaan07?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">See all repositories <i data-lucide="arrow-up-right"></i></a></div>
             </div>
+        </section>
 
-        </div>
-    </section>
-    <footer class="footer">
-        <h4 class="logo"> <i class='bx bxs-user'></i> My Portfolio</h4>
-        <div class="footer-container">
-            <div class="footer-item">
-                <i class='bx bxs-phone'></i> +27 60 696 2371
-            </div>
-            <div class="footer-item">
-                <i class='bx bxs-envelope'></i> sbahleriaandlamini@gmail.com
-            </div>
-        </div>
-    </footer>
+        <section class="section" id="experience"><div class="container"><p class="section-kicker">04 / EXPERIENCE & EDUCATION</p><h2 class="section-title">Learning by <span class="gradient-text">doing and sharing.</span></h2><div class="timeline"><article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">FEB 2026 — PRESENT</div><div class="timeline-body"><h3>C# Programming Intern</h3><p class="timeline-org">University of the Free State · QwaQwa</p><p>Support first-year C# programming sessions, explain foundational programming and OOP concepts, help students debug their code, and provide constructive feedback on practical exercises.</p></div></article><article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">2026 — IN PROGRESS</div><div class="timeline-body"><h3>Honours Studies · Computer Science / IT</h3><p class="timeline-org">University of the Free State</p><p>Continuing advanced studies while developing CareerSync AI, a database-driven CV and job matching web application.</p></div></article><article class="timeline-item"><div class="timeline-marker"></div><div class="timeline-date">2024</div><div class="timeline-body"><h3>BSc Computer Science and IT</h3><p class="timeline-org">University of the Free State</p><p>Built foundations in algorithms, data structures, software engineering, databases, web and mobile development, systems analysis and testing.</p></div></article></div></div></section>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <section class="section contact-section" id="contact"><div class="container"><div class="contact-panel"><div><p class="section-kicker">05 / LET'S CONNECT</p><h2>Have a project or <span class="gradient-text">opportunity in mind?</span></h2><p>I'm open to junior and graduate software development opportunities, collaborative projects and conversations about C#, .NET and building better software.</p><a class="btn btn-primary" href="mailto:sbahleriaandlamini@gmail.com?subject=Let's%20connect%20%E2%80%94%20Portfolio">Send me an email <i data-lucide="send"></i></a></div><div class="contact-options"><a href="mailto:sbahleriaandlamini@gmail.com"><i data-lucide="mail"></i><span>Email<small>sbahleriaandlamini@gmail.com</small></span><i data-lucide="arrow-up-right"></i></a><a href="https://github.com/Riaan07" target="_blank" rel="noopener noreferrer"><i data-lucide="github"></i><span>GitHub<small>github.com/Riaan07</small></span><i data-lucide="arrow-up-right"></i></a><a href="https://www.linkedin.com/Sbahle" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin"></i><span>LinkedIn<small>Connect professionally</small></span><i data-lucide="arrow-up-right"></i></a></div></div></div></section>
+    </main>
+    <footer class="footer"><div class="container footer-row"><a class="brand" href="#home"><span class="brand-icon">&lt;/&gt;</span><span>Riaan<span class="brand-dot">.</span>dev</span></a><p>Designed & built with HTML, CSS and JavaScript · <span id="year"></span></p><a href="#home" class="back-top">Back to top <i data-lucide="arrow-up"></i></a></div></footer>
 </body>
-
 </html>

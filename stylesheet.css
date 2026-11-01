@@ -1411,34 +1411,29 @@ a:focus-visible, button:focus-visible {
     gap: 16px
 }
 
-.shot-placeholder {
-    min-height: 174px;
-    border: 1px dashed #4a6d7c;
-    background: linear-gradient(135deg,#102437,#162b3e);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 18px;
-    gap: 9px;
-    border-radius: 11px
+.shot-card {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid #2a4053;
+    border-radius: 8px;
+    background: #0e1727
 }
 
-    .shot-placeholder svg {
-        color: #64cfb1;
-        width: 28px;
-        height: 28px
-    }
+.shot-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    background: #080d19
+}
 
-    .shot-placeholder strong {
-        font-size: 13px
-    }
-
-    .shot-placeholder span {
-        font-size: 11px;
-        color: #aac0cf
-    }
+.shot-card figcaption {
+    padding: 10px 13px;
+    color: #d9e5f9;
+    font-size: 13px;
+    font-weight: 700
+}
 
 .case-bottom {
     margin-top: 24px;

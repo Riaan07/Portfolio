@@ -1421,7 +1421,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .shot-card img {
-    display: block;
+    display:block;
     width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: contain;
